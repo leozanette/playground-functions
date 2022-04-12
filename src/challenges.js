@@ -1,19 +1,20 @@
 // Desafio 1
-function compareTrue(a,b) {
-  if(a === true && b === true) {
+function compareTrue(a, b) {
+  if (a === true && b === true) {
     return true
   } else return false
 }
 
 // Desafio 2
-function calcArea(a,b) {
+function calcArea(a, b) {
   let area = (a * b) / 2
   return area
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(a) {
+  let arr = a.split(" ")
+  return arr
 }
 
 // Desafio 4
