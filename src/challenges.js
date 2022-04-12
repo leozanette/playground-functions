@@ -56,11 +56,22 @@ function catAndMouse(mouse, cat1, cat2) {
     return "cat2";
   } return "cat1";
 }
-console.log(catAndMouse(1,0,2))
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(a) {
+  let arr = [];
+  for (i = 0; i < a.length; i += 1) {
+    if (a[i] % 3 === 0 && a[i] % 5 === 0) {
+      arr.push("fizzBuzz");
+    } else if (a[i] % 3 === 0) {
+      arr.push("fizz");
+    } else if (a[i] % 5 === 0) {
+      arr.push("buzz");
+    } else {
+      arr.push("bug!")
+    }
+  }
+  return arr
 }
 
 // Desafio 9
