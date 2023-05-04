@@ -32,8 +32,13 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(str) {
+// Extract all integers from the string
+let integers = str.match(/\d+/g).map(Number);
+
+const total = integers.reduce((a,c) => a+c);
+
+return total > 1 ? `${total} copos de água` : `${total} copo de água`;
 }
 
 module.exports = {
