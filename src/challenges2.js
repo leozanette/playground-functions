@@ -27,8 +27,8 @@ function generatePhoneNumber(array) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  return !(lineA + lineB < lineC || lineA + lineC < lineB || lineB + lineC < lineA || Math.abs(lineB - lineC) > lineA || Math.abs(lineA - lineC) > lineB || Math.abs(lineB - lineA) > lineC);
 }
 
 // Desafio 13
